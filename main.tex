@@ -1,64 +1,74 @@
 \documentclass{IEEEtran}
-\usepackage{graphicx}
-\usepackage{cite}
-\usepackage{url}
-\usepackage{hyperref}
 
-% Title and author information
 \title{Design and Development of a Low-Cost Infrared Veins Viewer for Medical Applications in Uganda}
-\author{
-    Shawal Mbalire,
-    %Your Co-Author's Name, and
-    %Another Co-Author's Name
-%\thanks{Your affiliation and contact information}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Shawal Mbalire}\\
+\IEEEauthorblockA{\textit{Department of Electrical and Computer Engineering} \\
+\textit{Makerere University}\\
+Kampala, Uganda \\
+shawal.mbalire@ieee.org or 0009-0002-5468-9395}
+% \and
+% \IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
 }
-
 \begin{document}
 
-\maketitle
+    \maketitle
 
-\begin{abstract}
-This paper presents the design and development of a low-cost infrared veins viewer tailored for medical applications in Uganda. The device addresses the challenge of vein visualization in resource-constrained healthcare settings, providing an affordable and accessible solution. We discuss the methodology, results, and implications of this research, highlighting the potential impact on patient care and healthcare delivery in Uganda.
-\end{abstract}
+    \begin{abstract}
+    This paper presents the design and development of a low-cost infrared veins viewer tailored for medical applications in Uganda. The device addresses the challenge of vein visualization in resource-constrained healthcare settings, providing an affordable and accessible solution. We discuss the methodology, results, and implications of this research, highlighting the potential impact on patient care and healthcare delivery in Uganda.
+    \end{abstract}
 
-\begin{IEEEkeywords}
-Infrared imaging, Vein visualization, Medical technology, Healthcare, Uganda.
-\end{IEEEkeywords}
+    \begin{IEEEkeywords}
+    Infrared imaging, Vein visualization, Medical technology, Healthcare, Uganda.
+    \end{IEEEkeywords}
 
-\section{Introduction}
-% Your introduction content here.
+    \section{INTRODUCTION}\label{sec:introduction}
+    This paper presents the design and development of a low-cost infrared veins viewer tailored for medical applications in Uganda. The device addresses the challenge of vein visualization in resource-constrained healthcare settings, providing an affordable and accessible solution. We discuss the methodology, results, and implications of this research, highlighting the potential impact on patient care and healthcare delivery in Uganda.
 
-\section{Background}
-% Your background content here.
+    \subsection{Background}\label{background}
+    Vein visualization is a critical aspect of medical procedures, particularly in the context of venous access for treatments, blood draws, and intravenous injections. Accurate and efficient vein visualization is essential for reducing patient discomfort, minimizing complications, and improving the overall quality of healthcare delivery.
 
-\section{Literatur Review}
+    However, in resource-constrained healthcare settings, such as those found in Uganda, healthcare facilities often face challenges in accessing advanced medical technologies. The cost and availability of vein visualization equipment can be limiting factors, leading to difficulties in locating and accessing veins, especially in patients with challenging anatomies, young children, or the elderly.
 
-In the paper \cite{marathe2014novel} present an innovative approach to vein detection using Near Infrared (NIR) imaging and wireless communication. The designed system, incorporating an IR LED source, CMOS camera, and Xbee wireless modules, successfully captures images of veins near the skin's surface, which are processed using MATLAB for improved visibility and vein detection. Morphological analysis of the images provides insights into the depth of superficial veins. This low-cost, wireless solution shows promise for enhancing the accuracy of venous access procedures in clinical settings, potentially reducing errors and improving patient care.
+    To address this issue, our research focuses on the development of a low-cost infrared veins viewer. This device leverages infrared imaging technology to enhance the visibility of veins near the skin's surface, making venous access procedures more accurate and less painful. By providing an affordable and accessible solution, we aim to improve patient care and healthcare outcomes in Uganda.
 
-\cite{toygar2020fyo} Multimodal biometric systems are gaining prominence for enhanced security in person authentication. This study presents the FYO vein database, encompassing three biometric traits—palm vein, dorsal vein, and wrist vein—acquired from the same individuals, aimed at advancing spoof-proof multimodal authentication systems. The vein images, collected using a medical vein finder in a controlled environment, are subjected to various feature extraction methods, including Binarized Statistical Image Features (BSIF), Gabor filter, Histogram of Oriented Gradients (HOG), and deep learning-based Convolutional Neural Networks (CNNs). Experimental results reveal competitive performance against existing databases, and the proposed CNN architecture demonstrates superior performance compared to hand-crafted methods. This open-access FYO database offers researchers valuable resources for advancing vein-based biometric authentication systems.
+    \subsection{Research Objectives}
+    The primary objectives of this research are as follows:
 
-\cite{ayoub2018diagnostic}The paper discusses the use of a high-resolution near-infrared (NIR) camera, vein warmer, and image contrast enhancer to improve the view of superficial veins for diagnostic purposes. The paper also details the hardware and software components of the system, including image processing steps such as ROI extraction, vein contrast enhancement, image filtration, segmentation, morphological operations, image fusion, and vein diameter measurement.
-The key findings of the experiments conducted using this system include a significant increase in superficial vein diameter as the skin temperature increases. This suggests that raising the temperature of the body part being scanned can enhance the quality of vein images and the visibility of veins.
+    \begin{enumerate}
+        \item To design and develop a low-cost infrared veins viewer suitable for medical applications in Uganda.
+        \item To assess the effectiveness of the device in enhancing vein visualization.
+        \item To evaluate the potential impact of this technology on patient care and healthcare delivery in resource-constrained settings.
+    \end{enumerate}
+
+    In the following sections, we will discuss the methodology used to design the device, present the results of our experiments, and analyze the implications of our research findings.
+
+
+    \section{Literature Review}
+
+    In the paper~\cite{marathe2014novel} present an innovative approach to vein detection using Near Infrared (NIR) imaging and wireless communication. The designed system, incorporating an IR LED source, CMOS camera, and Xbee wireless modules, successfully captures images of veins near the skin's surface, which are processed using MATLAB for improved visibility and vein detection. Morphological analysis of the images provides insights into the depth of superficial veins. This low-cost, wireless solution shows promise for enhancing the accuracy of venous access procedures in clinical settings, potentially reducing errors and improving patient care.
+
+    In~\cite{ayoub2018diagnostic}, The paper discusses the use of a high-resolution near-infrared (NIR) camera, vein warmer, and image contrast enhancer to improve the view of superficial veins for diagnostic purposes. The paper also details the hardware and software components of the system, including image processing steps such as ROI extraction, vein contrast enhancement, image filtration, segmentation, morphological operations, image fusion, and vein diameter measurement.
+    The key findings of the experiments conducted using this system include a significant increase in superficial vein diameter as the skin temperature increases. This suggests that raising the temperature of the body part being scanned can enhance the quality of vein images and the visibility of veins.
+
+    The explanation on~\cite{irfilter} shows that with infrared filters, Its possible to image infrared rays with normal DSLR cameras
 
 
 
-\section{Methodology}
-% Your methodology content here.
+    \section{Methodology}
 
-\section{Results}
-% Your results content here.
+    \section{Results}
 
-\section{Discussion}
-% Your discussion content here.
+    \section{Discussion}
 
-\section{Conclusion}
-% Your conclusion content here.
+    \section{Conclusion}
 
-\section{Recommendations}
-% Your recommendations content here.
+    \section{Recommendations}
 
-% References
-\bibliographystyle{IEEEtran}
-\bibliography{references} % Replace with the name of your .bib file
+    \bibliographystyle{IEEEtran}
+    \bibliography{ref}
 
 \end{document}
